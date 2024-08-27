@@ -1,0 +1,133 @@
+
+* {
+  margin: 0;
+}
+
+
+@keyframes jump {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scale-anim {
+  0%, 100% {
+    transform: scale(1);
+    
+  }
+  50% {
+    transform: scale(1.05);
+    
+  }
+}
+
+
+.jump {
+  animation: jump 1s linear;
+  animation-delay: 0.5s;
+}
+.scale-anim {
+  animation: scale-anim 1s infinite;
+}
+
+
+
+
+
+
+@keyframes up {
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  
+  
+    to {
+    opacity: 1;
+    transform: translateY(0px);
+    }
+  }
+  @keyframes left {
+  from{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  
+  
+    to {
+    opacity: 1;
+    transform: translateX(0px);
+    }
+  }
+  
+  @keyframes right {
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  
+  
+    to {
+    opacity: 1;
+    transform: translateX(0px);
+    }
+  }
+  
+  .up-block{
+    animation: up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  
+  .left-block{
+    animation: left linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  
+  .right-block{
+    animation: right linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
+
+/* gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #3b2dff, #75ff70); /* Adjust gradient colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.banner{
+  
+  background-image: url('/public/assets/img/sections/p1/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+.yellowbg{
+   
+  background-image: url('/public/assets/img/sections/p1/abonnement.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+.greenbg{
+ 
+  background-image: url('/public/assets/img/sections/p1/yellowbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+.loading{
+ 
+  background-image: url('/public/assets/img/sections/p1/loading.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} 

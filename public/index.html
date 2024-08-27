@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Yupi-L'intermediaire entre vos 5 fruits et légumes BIO par jours et un monde meilleur</title>
+    <meta
+      name="description"
+      content="Rejoignez Awaken Yoga Studio à Douala pour des cours de yoga transformateurs. Découvrez le bien-être, la tranquillité et la sérénité avec nos séances de yoga adaptées à tous les niveaux. Inscrivez-vous aujourd'hui pour améliorer votre santé physique et mentale."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const upBlock = document.querySelectorAll(".up-block");
+      const rightBlock = document.querySelectorAll(".right-block");
+      const leftBlock = document.querySelectorAll(".left-block");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          } else {
+            entry.target.classList.remove("in-view");
+          }
+        });
+      });
+
+      observer.observe(upBlock);
+      observer.observe(leftBlock);
+      observer.observe(rightBlock);
+    </script>
+  </body>
+</html>
