@@ -3,7 +3,7 @@ import './style.css'
 
 const Loading = () => {
   return (   
-<div class=" w-full bg-slate-100 h-[100vh] justify-center flex items-center">
+<div class=" slide-in w-full bg-slate-100 h-[100vh] justify-center flex items-center">
 
 <div class="card ">
   <div class="loader">

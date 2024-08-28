@@ -68,7 +68,7 @@ const Apropos = () => {
     <div>
       {/* section banner */}
       <section className="greenbg px-[100px] h-[100vh] flex items-center">
-        <div className=" md:w-[50%] lg:w-[45%] h-fit flex flex-col gap-4 p-8 bg-slate-200 max-sm:justify-center ">
+        <div className=" md:w-[50%] lg:w-[45%] h-fit flex flex-col gap-4 p-8 bg-slate-100 max-sm:justify-center ">
           <h1 className="text-[2.2rem] md:text-6xl font-bold">
            Bienvenu <br /> chez Yupi
           </h1>
