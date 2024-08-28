@@ -67,7 +67,7 @@ const Navbar = () => {
       </a>
 
       {/* Desktop Navigation Links */}
-      <ul className="flex items-center ">
+      <ul className="flex  max-sm:hidden items-center ">
         {navLinks.map((link, index) => (
           <li key={index} >
             <NavLink
@@ -86,7 +86,7 @@ const Navbar = () => {
       </div>
 
             {/* traduction*/}
-<div className="flex animate__fadeInLeft gap-8 bg-orange-100 items-center justify-center rounded-full p-2 max-sm:hidden">
+<div className="flex animate__fadeInLeft gap-8 bg-orange-100 items-center justify-center rounded-full p-2 ">
   <FullscreenExitRounded className="p-2 text-black rounded-full bg-white"/>
   <h1 className="font-bold text-md text-orange-500 px-2 ">Bienvenu Chez yupi</h1>
 </div>
