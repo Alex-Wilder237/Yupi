@@ -182,7 +182,7 @@ const Accueil = () => {
             <Btn
             label={"Inscris toi a notre Newsletter"}
             customStyle={"bg-orange-400 text-white font-medium"}
-            customLink={"/Abonnement"}
+            customLink={"/"}
           />
           </div>
 

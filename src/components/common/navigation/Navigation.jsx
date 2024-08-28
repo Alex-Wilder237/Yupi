@@ -67,15 +67,15 @@ const Navbar = () => {
       </a>
 
       {/* Desktop Navigation Links */}
-      <ul className="flex  max-sm:hidden items-center">
+      <ul className="flex  max-sm:hidden items-center ">
         {navLinks.map((link, index) => (
           <li key={index} >
             <NavLink
               to={link.linkUrl}
               className={
                 location.pathname === link.linkUrl
-                  ? " bg-slate-100 rounded-full max-sm:pb-2 font-bold px-6 py-4 text-md"
-                  : " text-md hover:bg-slate-50 px-6 py-4 hover:rounded-full"
+                  ? " bg-orange-100 text-orange-400 rounded-full max-sm:pb-2 font-bold px-6 py-2 text-md"
+                  : " text-md hover:bg-orange-50 px-6 py-2 hover:rounded-full"
               }
             >
               {link.linkName}
@@ -86,10 +86,9 @@ const Navbar = () => {
       </div>
 
             {/* traduction*/}
-<div className="flex gap-8 bg-slate-100 rounded-full px-8 py-4 max-sm:hidden">
-  <h1 className="font-bold">FR</h1>
-  <h1>EN</h1>
-  <h1>NR</h1>
+<div className="flex animate__fadeInLeft gap-8 bg-orange-100 items-center justify-center rounded-full p-2 max-sm:hidden">
+  <FullscreenExitRounded className="p-2 text-black rounded-full bg-white"/>
+  <h1 className="font-bold text-md text-orange-500 px-2 ">Bienvenu Chez yupi</h1>
 </div>
 
 

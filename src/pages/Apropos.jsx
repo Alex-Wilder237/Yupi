@@ -298,11 +298,11 @@ convictions.
         {showThankYou && (
           <div className="fixed p-4 top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-gray-800 bg-opacity-75">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <img className='w-[3vw] mb-2' src="./assets/anim5.png" alt="logo"/>
+              <img className='w-[3vw] mb-2' src="./assets/img/logo/logo.svg" alt="logo"/>
               <h2 className="text-2xl font-bold mb-4">Merci de nous avoir contactés !</h2>
               <p>Nous vous répondrons dès que possible.</p>
               <button
-                className="mt-4 bg-blue-700 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600"
+                className="mt-4 bg-orange-400 text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-700"
                 onClick={() => setShowThankYou(false)}
               >
                 Fermer
@@ -318,19 +318,20 @@ convictions.
       <div className="h-auto lg:w-[50%] mx-[auto] pb-20">
           <h2 className="text-[1.7rem] font-extrabold text-center">
             {" "}
-            Comment ça Marche ?
+            Questions Fréquentes (FAQ)
           </h2>
-          <p className="text-xl text-center">Simple comme bonjour !</p>
+          <p className="text-xl text-center">Trouvez des réponses à vos 
+          questions</p>
         </div>
-        <div className='w-[80%] bg-slate-50 rounded-3xl px-[50px]'>
+        <div className='lg:w-[80%] bg-slate-50 rounded-3xl px-10 lg:px-[50px]'>
       <Accordion>
-      <AccordionItem className='py-6' key="1" aria-label="Accordion 1" title="Accordion 1">
+      <AccordionItem className='py-6 text-lg font-bold' key="1" aria-label="Accordion 1" title="Comment puis-je changer mon abonnement ?">
         {defaultContent}
       </AccordionItem>
-      <AccordionItem className='py-6' key="2" aria-label="Accordion 2" title="Accordion 2">
+      <AccordionItem className='py-6' key="2" aria-label="Accordion 2" title="Quels sont les horaires de livraison ?">
         {defaultContent}
       </AccordionItem>
-      <AccordionItem className='py-6' key="3" aria-label="Accordion 3" title="Accordion 3">
+      <AccordionItem className='py-6' key="3" aria-label="Accordion 3" title="Puis-je annuler mon abonnement ?">
         {defaultContent}
       </AccordionItem>
     </Accordion>
