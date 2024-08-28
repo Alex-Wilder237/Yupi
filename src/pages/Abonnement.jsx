@@ -44,7 +44,7 @@ const Abonnement = () => {
       <section className="yellowbg px-10 lg:px-[100px] h-[100vh] flex items-center ">
         <div className="max-sm:text-center text-left h-fit md:w-[45%] flex flex-col gap-4 justify-start p-8 bg-slate-100  ">
           <h1 className="text-[2rem] md:text-6xl font-bold mx-[auto]">
-            recevez votre premier panier directement chez vous !
+            Recevez votre premier panier directement chez vous !
           </h1>
           <p className="lg:w-3/4 md:text-xl lg:text-2xl font-light">
             Sélectionnez le type d'abonnement qui vous convient Mixte ou Saison.
