@@ -161,7 +161,7 @@ const Accueil = () => {
             <ImageSkeleton
               src={"./assets/img/sections/p1/farmer.jpg"}
               alt={"farmer"}
-              styleClass={"h-fit w-full object-cover"}
+              styleClass={"w-full h-auto object-cover"}
             />
           </div>
         </div>
