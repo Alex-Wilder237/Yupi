@@ -108,7 +108,7 @@ const Apropos = () => {
             <ImageSkeleton
               src={"./assets/img/sections/p1/family.jpg"}
               alt={"farmer"}
-              styleClass={"h-fit w-full object-cover "}
+              styleClass={"h-auto w-full object-cover "}
             />
           </div>
         </div>
@@ -151,7 +151,7 @@ const Apropos = () => {
               <ImageSkeleton
                 src={"./assets/img/sections/p1/quote.png"}
                 alt={"farmer"}
-                styleClass={"lg:object-cover lg:h-[60vh] lg:w-[60vw] h-fit w-full object-cover "}
+                styleClass={"lg:object-cover lg:h-[60vh] lg:w-[60vw] h-auto w-full object-cover "}
               />
             </div>
           </div>
@@ -187,7 +187,7 @@ convictions.
             <ImageSkeleton
               src={"./assets/img/sections/p1/produits.jpeg"}
               alt={"farmer"}
-              styleClass={"lg:object-cover lg:h-[60vh] lg:w-[60vw] h-fit w-full object-cover "}
+              styleClass={"lg:object-cover lg:h-[60vh] lg:w-[60vw] h-auto w-full object-cover "}
             />
           </div>
         </div>

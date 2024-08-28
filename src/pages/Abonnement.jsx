@@ -91,7 +91,7 @@ const Abonnement = () => {
               src={"./assets/img/sections/p1/IMG_0630.jpg"}
               alt={"farmer"}
               styleClass={
-                "lg:object-cover lg:h-[60vh] lg:w-[60vw] h-fit w-full object-cover "
+                "lg:object-cover lg:h-[60vh] lg:w-[60vw] h-auto w-full object-cover "
               }
             />
           </div>
@@ -126,7 +126,7 @@ const Abonnement = () => {
               src={"./assets/img/sections/p1/basket.png"}
               alt={"Delivery"}
               styleClass={
-                "lg:object-cover lg:h-[60vh] lg:w-[60vw] h-fit w-full object-cover "
+                "lg:object-cover lg:h-[60vh] lg:w-[60vw] h-auto w-full object-cover "
               }
             />
           </div>
