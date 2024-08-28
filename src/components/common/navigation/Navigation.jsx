@@ -94,7 +94,7 @@ const Navbar = () => {
 
       {/* Mobile Icon */}
       
-     <div onClick={toggleMobileMenu} className=" bg-slate-200 p-10 rounded-full text-sm not-italic leading-[normal] whitespace-nowrap justify-center items-stretch flex flex-col px-2 py-1.5 md:hidden cursor-pointer"
+     <div onClick={toggleMobileMenu} className=" bg-orange-200 p-10 rounded-full text-sm not-italic leading-[normal] whitespace-nowrap justify-center items-stretch flex flex-col px-2 py-1.5 md:hidden cursor-pointer"
         >
 <Menu/>
      </div>
@@ -121,7 +121,7 @@ const Navbar = () => {
                   onClick={toggleMobileMenu}
                   className={
                     location.pathname === link.linkUrl
-                      ? "bg-slate-100 rounded-full px-8 py-2 font-extrabold text-xl"
+                      ? "bg-orange-100 text-orange-400 rounded-full px-8 py-2 font-extrabold text-xl"
                       : " text-xl text-gray-700 px-8 py-2"
                   }
                 >
@@ -133,7 +133,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className="p-5 cursor-pointer bg-slate-50 rounded-full"
+            className="p-5 cursor-pointer bg-orange-100 rounded-full"
             onClick={toggleMobileMenu}
           >
             <FullscreenExitRounded className="text-xl" />
