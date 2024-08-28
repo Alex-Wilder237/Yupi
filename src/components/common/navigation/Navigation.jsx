@@ -67,7 +67,7 @@ const Navbar = () => {
       </a>
 
       {/* Desktop Navigation Links */}
-      <ul className="flex  max-sm:hidden items-center ">
+      <ul className="flex items-center ">
         {navLinks.map((link, index) => (
           <li key={index} >
             <NavLink
