@@ -132,7 +132,7 @@ const Abonnement = () => {
           </div>
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:p-10 gap-10  ">
-          <div className="col-span-1 bg-green-100 p-10 ">
+          <div className="col-span-1 bg-green-100 p-10 max-sm:mb-2 ">
             <div className="gap-4 flex flex-col mb-8">
               <h1 className="text-[1.7rem] w-fit lg:text-4xl font-extrabold p-8 bg-white ">
                 1
