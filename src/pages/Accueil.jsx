@@ -190,7 +190,7 @@ const Accueil = () => {
             <ImageSkeleton
               src={"./assets/img/sections/p1/market.png"}
               alt={"farmer"}
-              styleClass={"h-fit lg:w-[50vw] object-cover"}
+              styleClass={"h-auto lg:w-[50vw] object-cover"}
             />
     
           
@@ -214,7 +214,7 @@ const Accueil = () => {
             <ImageSkeleton
               src={"./assets/img/sections/p1/belgium.png"}
               alt={"farmer"}
-              styleClass={"h-fit w-[10vw] lg:w-[50vw] object-cover"}
+              styleClass={"h-auto w-[10vw] lg:w-[50vw] object-cover"}
             />
     
           
@@ -237,7 +237,7 @@ pays les plus proches
             <ImageSkeleton
               src={"./assets/img/sections/p1/eu.png"}
               alt={"farmer"}
-              styleClass={"h-fit w-[10vw] lg:w-[60vw] object-cover"}
+              styleClass={"h-auto w-[10vw] lg:w-[60vw] object-cover"}
             />
           
           </div>
