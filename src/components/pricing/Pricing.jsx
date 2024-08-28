@@ -30,14 +30,14 @@ const PricingComponent = () => {
       { id: 'price_3months_mixte', title: 'Abonnement Triple', price: '270€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
     ],
     saison: [
-      { id: 'price_1month_mixte', title: 'Abonnement  Simple', price: '120€/ 1mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
-      { id: 'price_2months_mixte', title: 'Abonnement Double', price: '160€/ 2mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
-      { id: 'price_3months_mixte', title: 'Abonnement Triple', price: '200€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
+      { id: 'price_1month_mixte', title: 'Abonnement  Simple', price: '100€/ 1mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
+      { id: 'price_2months_mixte', title: 'Abonnement Double', price: '190€/ 2mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
+      { id: 'price_3months_mixte', title: 'Abonnement Triple', price: '270€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
     ],
   };
 
   return (
-    <div className="p-6 ">
+    <div className="">
       
       <div className="h-auto md:w-full lg:w-[50%] mx-[auto] pb-20">
           <h2 className="text-[1.7rem] font-extrabold text-center">
@@ -63,7 +63,7 @@ const PricingComponent = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
         {plans[selectedPlan].map((plan) => (
-          <div key={plan.id} className="p-8 rounded-3xl bg-slate-50">
+          <div key={plan.id} className="p-8 rounded-3xl bg-slate-50 border-1 border-blue-400 ">
             <h2 className="text-md  font-bold mb-2">{plan.title}</h2>
             <p className="text-3xl text-orange-400 font-extrabold mb-4">{plan.price}</p>
             <p className="text-gray-600 text-lg mt-8">{plan.description}</p>
