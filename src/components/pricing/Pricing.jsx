@@ -25,14 +25,14 @@ const PricingComponent = () => {
 
   const plans = {
     mixte: [
-      { id: 'price_1month_mixte', title: 'Abonnement  Simple', price: '100€/ 1mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
-      { id: 'price_2months_mixte', title: 'Abonnement Double', price: '190€/ 2mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
-      { id: 'price_3months_mixte', title: 'Abonnement Triple', price: '270€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
+      { id: 'price_1month_mixte', title: 'Abonnement mixte Simple', price: '100€/ 1mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
+      { id: 'price_2months_mixte', title: 'Abonnement mixte Double', price: '190€/ 2mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
+      { id: 'price_3months_mixte', title: 'Abonnement mixte Triple', price: '270€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
     ],
     saison: [
-      { id: 'price_1month_mixte', title: 'Abonnement  Simple', price: '100€/ 1mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
-      { id: 'price_2months_mixte', title: 'Abonnement Double', price: '190€/ 2mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
-      { id: 'price_3months_mixte', title: 'Abonnement Triple', price: '270€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
+      { id: 'price_1month_mixte', title: 'Abonnement saison Simple', price: '100€/ 1mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
+      { id: 'price_2months_mixte', title: 'Abonnement saison Double', price: '190€/ 2mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
+      { id: 'price_3months_mixte', title: 'Abonnement saison Triple', price: '270€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
     ],
   };
 
