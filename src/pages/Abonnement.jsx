@@ -42,9 +42,9 @@ const Abonnement = () => {
     <div>
       {/* section banner */}
       <section className="yellowbg px-10 lg:px-[100px] h-[100vh] flex items-center ">
-        <div className="max-sm:text-center text-left h-fit md:w-[45%] flex flex-col gap-4 justify-start p-8 bg-slate-100  ">
-          <h1 className="text-[2rem] md:text-6xl font-bold mx-[auto]">
-            Recevez votre premier panier directement chez vous !
+        <div className="max-sm:text-center text-left h-fit md:w-[45%] flex flex-col gap-4 justify-start p-8 max-sm:rounded-xl bg-slate-100  ">
+          <h1 className="text-[1.7rem] md:text-5xl font-bold max-sm:mx-[auto]">
+            Recevez votre <br />premier panier <br /> chez vous !
           </h1>
           <p className="lg:w-3/4 md:text-xl lg:text-2xl font-light">
             Sélectionnez le type d'abonnement qui vous convient Mixte ou Saison.
@@ -71,17 +71,17 @@ const Abonnement = () => {
               <ImageSkeleton
                 src={"./assets/img/sections/p1/IMG_0631.jpg"}
                 alt={"farmer"}
-                styleClass={"object-cover h-[22vh] w-fit max-sm:hidden "}
+                styleClass={"object-cover h-[22vh] w-full max-sm:hidden "}
               />
               <ImageSkeleton
                 src={"./assets/img/sections/p1/farming.jpg"}
                 alt={"farmer"}
-                styleClass={"object-cover h-[22vh] w-fit max-sm:hidden "}
+                styleClass={"object-cover h-[22vh] w-full max-sm:hidden "}
               />
               <ImageSkeleton
                 src={"./assets/img/sections/p1/fruit.jpg"}
                 alt={"farmer"}
-                styleClass={"object-cover h-[22vh] w-fit max-sm:hidden "}
+                styleClass={"object-cover h-[22vh] w-full max-sm:hidden "}
               />
             </div>
           </div>

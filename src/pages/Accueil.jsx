@@ -62,9 +62,9 @@ const Accueil = () => {
       {/* section banner */}
       <section className="banner px-10 md:px-[100px] h-[100vh] flex items-center">
         <div className=" md:w-[50%] max-sm:text-center max-sm:rounded-xl lg:w-[45%] h-fit flex flex-col gap-4 p-8 bg-slate-100 max-sm:justify-center ">
-          <h1 className="text-[2rem]  md:text-4xl lg:text-6xl leading-[2.8rem] font-bold mx-[auto]">
+          <h1 className="text-[1.7rem] md:text-4xl lg:text-5xl lg:leading-[2.8rem] font-bold max-sm:mx-[auto]">
             Mangez Sainement, Vivez Mieux avec{" "}
-            <span className="text-orange-500 text-[2.2rem] md:text-4xl lg:text-6xl font-bold">
+            <span className="text-orange-500 text-[1.7rem] md:text-4xl lg:text-5xl font-bold">
               Yupi
             </span>
           </h1>
@@ -74,7 +74,7 @@ const Accueil = () => {
           </p>
           <Btn
             label={"Découvrez Nos Abonnements"}
-            customStyle={"bg-yellow-400 max-sm:mx-auto text-green-800 font-medium "}
+            customStyle={"bg-yellow-400 max-sm:mx-auto font-medium "}
             customLink={"/Abonnement"}
           />
         </div>
@@ -101,7 +101,7 @@ const Accueil = () => {
               <div className="">
                 <div className="mb-4 justify-center flex items-center">
                   <img
-                    className="w-[13vw] md:w-[4vw] h-full object-cover"
+                    className="w-[13vw] md:w-[4vw] h-auto object-cover"
                     src={card.Image}
                     alt=""
                     srcset=""
@@ -171,9 +171,9 @@ const Accueil = () => {
       <section className="px-2 py-[100px] lg:px-[5%] lg:py-[10%]  2xl:px-[15%]">
         <div className=" lg:grid grid-cols-1 grid-rows-2 gap-4">
           <div className="row-span-1 bg-[#5c6868] h-fit lg:h-[50vh] rounded-3xl p-10 max-sm:mb-2 overflow-hidden flex-wrap-reverse flex md:flex-nowrap gap-10 w-full justify-between">
-          <div className="flex flex-col lg:w-1/3 justify-between max-sm:gap-4 ">
-            <h1 className="text-5xl font-extrabold text-yellow-300">A venir, Yupi market !</h1>
-            <p className="text-white text-lg">
+          <div className="flex flex-col lg:w-1/3 lg:justify-between md:gap-4 max-sm:gap-4 max-sm:justify-center max-sm:items-center ">
+            <h1 className="text-3xl lg:text-5xl max-sm:text-center font-extrabold text-yellow-300">A venir, Yupi market !</h1>
+            <p className="text-white max-sm:text-center text-md lg:text-lg">
               Bientôt, ajouter notre sélection de produits a la pièce a votre
               prochaine livraison. fruits, légumes, produits d’épicerie Bio
               jusqu’a -50% pour aller toujours plus loin dans la lutte contre

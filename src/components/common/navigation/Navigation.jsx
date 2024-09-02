@@ -85,18 +85,20 @@ const Navbar = () => {
       </ul>
       </div>
 
-            {/* traduction*/}
-<div className="flex animate__fadeInLeft gap-8 bg-orange-100 items-center justify-center rounded-full p-2 ">
-  <FullscreenExitRounded className="p-2 text-black rounded-full bg-white"/>
-  <h1 className="font-bold text-md text-orange-500 px-2 ">Bienvenu Chez yupi</h1>
-</div>
+
 
 
       {/* Mobile Icon */}
-      
+      <div className="flex">
+            {/* traduction*/}
+            <div className="flex slide-in gap-8 bg-orange-200 items-center justify-center rounded-full p-2 ">
+  <FullscreenExitRounded className="p-2 text-black rounded-full bg-white"/>
+  <h1 className="font-bold text-md text-orange-500 px-2 ">Bienvenu Chez yupi</h1>
+</div>
      <div onClick={toggleMobileMenu} className=" bg-orange-200 p-10 rounded-full text-sm not-italic leading-[normal] whitespace-nowrap justify-center items-stretch flex flex-col px-2 py-1.5 md:hidden cursor-pointer"
         >
 <Menu/>
+     </div>
      </div>
 
       {/* Mobile Navigation Menu */}

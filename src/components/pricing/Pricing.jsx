@@ -1,38 +1,38 @@
 import React, { useState } from 'react';
-import { loadStripe } from '@stripe/stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
 
 const PricingComponent = () => {
   const [selectedPlan, setSelectedPlan] = useState('mixte');
-  const stripePromise = loadStripe('your-publishable-key-here');
+  // const stripePromise = loadStripe('your-publishable-key-here');
 
   const handlePlanSelect = (plan) => {
     setSelectedPlan(plan);
   };
 
-  const handleSubscription = async (priceId) => {
-    const stripe = await stripePromise;
-    const { error } = await stripe.redirectToCheckout({
-      mode: 'subscription',
-      lineItems: [{ price: priceId, quantity: 1 }],
-      successUrl: window.location.origin + '/success',
-      cancelUrl: window.location.origin + '/cancel',
-    });
+  // const handleSubscription = async (priceId) => {
+  //   const stripe = await stripePromise;
+  //   const { error } = await stripe.redirectToCheckout({
+  //     mode: 'subscription',
+  //     lineItems: [{ price: priceId, quantity: 1 }],
+  //     successUrl: window.location.origin + '/success',
+  //     cancelUrl: window.location.origin + '/cancel',
+  //   });
 
-    if (error) {
-      console.error("Stripe Checkout error:", error);
-    }
-  };
+  //   if (error) {
+  //     console.error("Stripe Checkout error:", error);
+  //   }
+  // };
 
   const plans = {
     mixte: [
-      { id: 'price_1month_mixte', title: 'Abonnement mixte Simple', price: '100€/ 1mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
-      { id: 'price_2months_mixte', title: 'Abonnement mixte Double', price: '190€/ 2mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
-      { id: 'price_3months_mixte', title: 'Abonnement mixte Triple', price: '270€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
+      { id: 'price_1month_mixte', title: 'Simple', price: '100€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
+      { id: 'price_2months_mixte', title: 'Double', price: '190€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
+      { id: 'price_3months_mixte', title: 'Triple', price: '270€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
     ],
     saison: [
-      { id: 'price_1month_mixte', title: 'Abonnement saison Simple', price: '100€/ 1mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
-      { id: 'price_2months_mixte', title: 'Abonnement saison Double', price: '190€/ 2mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
-      { id: 'price_3months_mixte', title: 'Abonnement saison Triple', price: '270€/ 3mois', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
+      { id: 'price_1month_mixte', title: 'Simple', price: '100€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
+      { id: 'price_2months_mixte', title: 'Double', price: '190€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
+      { id: 'price_3months_mixte', title: 'Triple', price: '270€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
     ],
   };
 
@@ -63,13 +63,13 @@ const PricingComponent = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
         {plans[selectedPlan].map((plan) => (
-          <div key={plan.id} className="p-8 rounded-3xl bg-slate-50 border-1 border-blue-400 ">
-            <h2 className="text-md  font-bold mb-2">{plan.title}</h2>
-            <p className="text-3xl text-orange-400 font-extrabold mb-4">{plan.price}</p>
-            <p className="text-gray-600 text-lg mt-8">{plan.description}</p>
+          <div key={plan.id} className="p-8 rounded-3xl bg-[#5c6868] border-1 border-blue-400 ">
+            <h2 className="text-md  font-bold mb-8 text-white uppercase rounded-full p-4 w-fit ">{plan.title}</h2>
+            <p className="text-5xl text-yellow-400 font-medium mb-4">{plan.price} <span className='text-sm text-orange-200 '>/mo</span>  </p>
+            <p className="text-white text-lg mt-8">{plan.description}</p>
             <button
-              className="hover:bg-black bg-gray-600 rounded-3xl w-full text-white mt-8 px-4 py-2"
-              onClick={() => handleSubscription(plan.id)}
+              className="bg-black hover:bg-yellow-400 rounded-3xl w-full text-white mt-8 px-4 py-2"
+              // onClick={() => handleSubscription(plan.id)}
             >
               S'abonner
             </button>
