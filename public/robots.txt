@@ -1,6 +1,0 @@
-# https://www.awakenyogacmr.netlify.app/robots.txt
-User-agent: *
-Disallow: /admin/
-Allow: /public/
-Sitemap: https://www.awakenyogacmr.netlify.app/sitemap.xml
-
