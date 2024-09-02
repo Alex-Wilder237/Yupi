@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 // import { loadStripe } from '@stripe/stripe-js';
 
 const PricingComponent = () => {
@@ -25,15 +26,94 @@ const PricingComponent = () => {
 
   const plans = {
     mixte: [
-      { id: 'price_1month_mixte', title: 'Simple', price: '100€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
-      { id: 'price_2months_mixte', title: 'Double', price: '190€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
-      { id: 'price_3months_mixte', title: 'Triple', price: '270€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
-    ],
+      {
+        title: 'Simple',
+        price: '100€',
+        priceSuffix: '/1month',
+        features: [
+          'Panier de fruits et legumes Bio pour une semaine',
+          'livraison uniquement le dimanche',
+          'horraire de livraison entre 8h et 18h',
+          'vous seriez prevenu par mail',
+        ],
+        buttonText: 'Commencez',
+        buttonUrl:'https://buy.stripe.com/5kA2a686Tavl5sQ3cc',
+        bgColor: 'bg-pink-300',
+      },
+      {
+        title: 'Double',
+        price: '190€',
+        priceSuffix: '/2month',
+        features: [
+          'Panier de fruits et legumes Bio pour une semaine',
+          'livraison uniquement le dimanche',
+          'Vous pouvez proposer une plage horraire de 2h entre 8h et 18h',
+          'vous seriez prevenu par mail',
+        ],
+        buttonText: 'Commencez',
+        buttonUrl:'https://buy.stripe.com/fZeaGC72P7j9dZmbIM',
+        bgColor: 'bg-lime-300',
+      },
+      {
+        title: 'Tripple',
+        price: '270€',
+        priceSuffix: '/3month',
+        features: [
+          'Panier de fruits et legumes Bio pour une semaine',
+          'livraison uniquement le dimanche',
+          "Vous pouvez proposer une l'horraire de votre choix entre 8h et 18h",
+          'vous seriez prevenu par mail',
+        ],
+        buttonText: 'Commencez',
+        buttonUrl:'https://buy.stripe.com/3cs7uq3QD7j9g7ucMT',
+        bgColor: 'bg-orange-300',
+      }],
+
+
+
     saison: [
-      { id: 'price_1month_mixte', title: 'Simple', price: '100€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le dimanche tout la journée entre 8h et 18h nous allons vous prévenir /mail ou message' },
-      { id: 'price_2months_mixte', title: 'Double', price: '190€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer une plage horaire de 2h entre 8h et 18h .' },
-      { id: 'price_3months_mixte', title: 'Triple', price: '270€', description: 'Ce panier contient une sélection variée de fruits et légumes BIO pour une semaine. Livraison uniquement le  Dimanche vous pouvez proposer l’horaire qui vous convient entre 8h et 18h' },
-    ],
+      {
+        title: 'Simple',
+        price: '100€',
+        priceSuffix: '/1month',
+        features: [
+          'Panier de fruits et legume local Bio pour une semaine',
+          'livraison uniquement le dimanche',
+          'horraire de livraison entre 8h et 18h',
+          'vous seriez prevenu par mail',
+        ],
+        buttonText: 'Commencez',
+        buttonUrl:'https://buy.stripe.com/8wM8yudrdbzp5sQ5kl',
+        bgColor: 'bg-lime-300',
+      },
+      {
+        title: 'Double',
+        price: '190€',
+        priceSuffix: '/2month',
+        features: [
+          'Panier de fruits et legumes local Bio pour une semaine',
+          'livraison uniquement le dimanche',
+          'Vous pouvez proposer une plage horraire de 2h entre 8h et 18h',
+          'vous seriez prevenu par mail',
+        ],
+        buttonText: 'Commencez',
+        buttonUrl:'https://buy.stripe.com/5kAg0Wfzlbzp2gEaEJ',
+        bgColor: 'bg-lime-300',
+      },
+      {
+        title: 'Tripple',
+        price: '270€',
+        priceSuffix: '/3month',
+        features: [
+          'Panier de fruits et legumes local Bio pour une semaine',
+          'livraison uniquement le dimanche',
+          "Vous pouvez proposer une l'horraire de votre choix entre 8h et 18h",
+          'vous seriez prevenu par mail',
+        ],
+        buttonText: 'Commencez',
+        buttonUrl:'https://buy.stripe.com/5kAg0Wfzlbzp2gEaEJ',
+        bgColor: 'bg-lime-300',
+      }],
   };
 
   return (
@@ -62,17 +142,33 @@ const PricingComponent = () => {
         </button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-        {plans[selectedPlan].map((plan) => (
-          <div key={plan.id} className="p-8 rounded-3xl bg-[#5c6868] border-1 border-blue-400 ">
-            <h2 className="text-md  font-bold mb-8 text-white uppercase rounded-full p-4 w-fit ">{plan.title}</h2>
-            <p className="text-5xl text-yellow-400 font-medium mb-4">{plan.price} <span className='text-sm text-orange-200 '>/mo</span>  </p>
-            <p className="text-white text-lg mt-8">{plan.description}</p>
+        {plans[selectedPlan].map((plan) =>  (
+          <div
+            key={plan.title}
+            className={`${plan.bgColor} rounded-lg p-8 flex flex-col justify-between`}
+          >
+            <h2 className="text-2xl font-bold text-black mb-4">{plan.title}</h2>
+            <p className="text-5xl font-extrabold text-black">
+              {plan.price}
+              <span className="text-lg font-normal text-black">
+                {plan.priceSuffix}
+              </span>
+            </p>
+            <ul className="mt-6 space-y-3">
+              {plan.features.map((feature, index) => (
+                <li key={index} className="flex items-center text-black">
+                  <CheckCircleIcon className="text-black mr-2" />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <a href={plan.buttonUrl}>
             <button
-              className="bg-black hover:bg-yellow-400 rounded-3xl w-full text-white mt-8 px-4 py-2"
-              // onClick={() => handleSubscription(plan.id)}
+              className="mt-6 py-3 px-6 w-full text-white bg-black hover:bg-gray-800 rounded-full"
             >
-              S'abonner
+              {plan.buttonText}
             </button>
+            </a>
           </div>
         ))}
       </div>
