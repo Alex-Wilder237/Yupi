@@ -36,7 +36,7 @@ const Apropos = () => {
 
     try {
       // Envoyer les données du formulaire à Formspree
-      await axios.post('https://formspree.io/f/xrbzeovk', formData);
+      await axios.post('https://formspree.io/f/xyzgvgkb', formData);
 
       // Afficher le message de remerciement
       setShowThankYou(true);

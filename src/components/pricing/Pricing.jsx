@@ -84,7 +84,7 @@ const PricingComponent = () => {
         ],
         buttonText: 'Commencez',
         buttonUrl:'https://buy.stripe.com/8wM8yudrdbzp5sQ5kl',
-        bgColor: 'bg-lime-300',
+        bgColor: 'bg-slate-100',
       },
       {
         title: 'Double',
@@ -98,7 +98,7 @@ const PricingComponent = () => {
         ],
         buttonText: 'Commencez',
         buttonUrl:'https://buy.stripe.com/5kAg0Wfzlbzp2gEaEJ',
-        bgColor: 'bg-lime-300',
+        bgColor: 'bg-slate-100',
       },
       {
         title: 'Tripple',
@@ -112,7 +112,7 @@ const PricingComponent = () => {
         ],
         buttonText: 'Commencez',
         buttonUrl:'https://buy.stripe.com/5kAg0Wfzlbzp2gEaEJ',
-        bgColor: 'bg-lime-300',
+        bgColor: 'bg-slate-100',
       }],
   };
 

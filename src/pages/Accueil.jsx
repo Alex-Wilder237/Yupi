@@ -3,6 +3,7 @@ import "../styles/App.css";
 import Btn from "../components/common/button/Button";
 import ImageSkeleton from "../components/common/image/Image";
 import MarqueeDemo from "../components/ui/magicui/Reviews";
+import Newsletter from "../components/newsletter/Newsletter";
 
 
 
@@ -223,7 +224,7 @@ const Accueil = () => {
           <div className="flex flex-col gap-4 ">
             <h1 className="text-3xl font-extrabold">livraison varié</h1>
             <p className=" text-lg">
-            L’abonnement Varié vous livrera des produits BIO des
+            L’abonnement Mixte vous livrera des produits BIO des
 pays les plus proches
             </p>
             <Btn
@@ -261,8 +262,8 @@ pays les plus proches
 </section>
 
 {/* section Newsletter*/}
-<section className="lg:h-svh py-[50px] flex justify-center items-center">
-<div className="container bg-blue-100 w-[90%] lg:w-[80%] m-[auto] p-10 lg:py-[100px] rounded-3xl flex flex-col gap-8 justify-center items-center">
+{/* <section className="lg:h-svh py-[50px] flex justify-center items-center">
+{/* <div className="container bg-blue-100 w-[90%] lg:w-[80%] m-[auto] p-10 lg:py-[100px] rounded-3xl flex flex-col gap-8 justify-center items-center">
 <div className="flex flex-col justify-center">
           <h2 className="text-[1.7rem] font-extrabold text-center ">
             {" "}
@@ -280,8 +281,10 @@ pays les plus proches
             customLink={"/Abonnement"}
           />
         </div>
-</div>
-</section>
+</div> */}
+
+{/* </section> */} */}
+<Newsletter/>
     </div>
   );
 };
